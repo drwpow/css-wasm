@@ -1,0 +1,8 @@
+@use "../tokens";
+
+.Button {
+  display: block;
+  background-color: tokens.$blue;
+  color: white;
+  border: none;
+}
