@@ -1,6 +1,11 @@
-const { parse } = require('./wasm-node/css_wasm_parser.js');
+const wasm = require('./wasm-node/css_wasm_parser.js');
 
-async function build(filename) {
-  return await parse(filename);
+async function parseCode(input) {
+  return await wasm.parseCode(input);
 }
-module.exports = build;
+exports.parseCode = parseCode;
+
+async function parseFile(input) {
+  return await wasm.parseFile(input);
+}
+exports.parseFile = parseFile;
