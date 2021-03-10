@@ -1,6 +1,7 @@
 {
   "name": "css-wasm",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.0",
+  "description": "A WASM-powered replacement for PostCSS and Sass",
   "author": {
     "name": "Drew Powers",
     "email": "drew@pow.rs"
@@ -8,6 +9,9 @@
   "main": "./index.cjs",
   "module": "./index.mjs",
   "files": [
+    "index.cjs",
+    "index.d.ts",
+    "index.mjs",
     "src",
     "wasm",
     "wasm-node"
