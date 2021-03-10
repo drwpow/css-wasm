@@ -2,6 +2,9 @@
   "name": "css-wasm",
   "version": "0.0.1-alpha.0",
   "description": "A WASM-powered replacement for PostCSS and Sass",
+  "bin": {
+    "css-wasm": "./bin/cli.js"
+  },
   "author": {
     "name": "Drew Powers",
     "email": "drew@pow.rs"
@@ -17,8 +20,9 @@
     "wasm-node"
   ],
   "exports": {
-    "import": "./index.cjs",
-    "require": "./index.mjs"
+    "browser": "./index.mjs",
+    "import": "./index.mjs",
+    "require": "./index.cjs"
   },
   "types": "./esm/index.d.ts",
   "scripts": {
