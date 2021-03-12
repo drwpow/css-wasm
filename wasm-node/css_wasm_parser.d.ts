@@ -4,9 +4,9 @@
 * @param {string} input
 * @returns {string}
 */
-export function parseFile(input: string): string;
+export function renderData(input: string): string;
 /**
 * @param {string} input
 * @returns {string}
 */
-export function parseCode(input: string): string;
+export function renderFile(input: string): string;

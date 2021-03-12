@@ -24,7 +24,6 @@
     "import": "./index.mjs",
     "require": "./index.cjs"
   },
-  "types": "./esm/index.d.ts",
   "scripts": {
     "build": "make build",
     "test": "uvu"

@@ -4,19 +4,19 @@
 * @param {string} input
 * @returns {string}
 */
-export function parseFile(input: string): string;
+export function renderData(input: string): string;
 /**
 * @param {string} input
 * @returns {string}
 */
-export function parseCode(input: string): string;
+export function renderFile(input: string): string;
 
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
   readonly memory: WebAssembly.Memory;
-  readonly parseFile: (a: number, b: number, c: number) => void;
-  readonly parseCode: (a: number, b: number, c: number) => void;
+  readonly renderData: (a: number, b: number, c: number) => void;
+  readonly renderFile: (a: number, b: number, c: number) => void;
   readonly __wbindgen_add_to_stack_pointer: (a: number) => number;
   readonly __wbindgen_malloc: (a: number) => number;
   readonly __wbindgen_realloc: (a: number, b: number, c: number) => number;
