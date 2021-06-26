@@ -9,7 +9,7 @@ body {
   color: $blue;
 }
 `);
-  assert.equal(result, 'body{color:#00f}');
+  assert.equal(result, 'body{color:#00f}\n');
 });
 
 test.run();
